@@ -4,17 +4,19 @@
         <meta charset='UTF-8'>
         <title>Document</title>
         <style>
-            input[value="작성불가!"]{
-                color: blue;
-                width: 100px;
-                opacity: 0.2;
+            input[type=password]{
+                color:blue;
+                width:100px;
             }
             /* disabled를 부여받은 모든 요소 opacity:0.2(투명도 0.2)적용*/
+            [disabled]{
+                opacity: 0.2;
+            }
         </style>
     </head>
     <body>
         아이디 : <input type="text" value="hello">
         비번 : <input type="password" value="1234">
         <input type="text" value="작성불가!" disabled>
-    </body>
+     </body>
 </html>
